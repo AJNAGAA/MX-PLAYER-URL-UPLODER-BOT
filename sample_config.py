@@ -3,12 +3,12 @@ import os
 class Config(object):
 
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6719341789:AAG1LVNuwxlEEgEOrjC69IAzPjCeutxTsy0")
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
     # The Telegram API things
     # Get these values from my.telegram.org
-    APP_ID = int(os.environ.get("APP_ID", "26180117"))
-    API_HASH = os.environ.get("API_HASH", "fa5e31c8139703d6ab8f11f817e8d450")
+    APP_ID = int(os.environ.get("APP_ID", ""))
+    API_HASH = os.environ.get("API_HASH", "")
 
     # Array to store users who are authorized to use the bot
     AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
@@ -29,5 +29,5 @@ class Config(object):
     DEF_THUMB_NAIL_VID_S = os.environ.get("DEF_THUMB_NAIL_VID_S", "")
     
     # Sql Database url
-    DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://jaynagar06:jaynagar06@cluster0.nqc36zj.mongodb.net/?retryWrites=true&w=majority")
+    DB_URI = os.environ.get("DATABASE_URL", "")
    
